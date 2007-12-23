@@ -1,0 +1,1103 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resrc1.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "resource.h"
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Polish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PLK)
+#ifdef _WIN32
+LANGUAGE LANG_POLISH, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(MEMSTAT_LANG_PL)
+#if defined(APSTUDIO_INVOKED)
+IDD_BENCHMARK$(MEMSTAT_LANG_PL) DIALOG DISCARDABLE  0, 0, 216, 230
+#else
+IDD_BENCHMARK DIALOG DISCARDABLE  0, 0, 216, 230
+#endif
+STYLE DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "MemStat XP - Test szybkoœci pamiêci"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Slider1",IDC_BENCH_PERC,"msctls_trackbar32",WS_TABSTOP,
+                    13,41,189,20
+    CONTROL         "Slider2",IDC_BENCH_PASSES,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,92,74,109,15
+    PUSHBUTTON      "Rozpocznij test",IDOK,36,208,64,15
+    PUSHBUTTON      "Zamknij",IDCANCEL,116,208,64,15
+    LTEXT           "Podaj iloœæ wolnej pamiêci fizycznej, która ma\nbyæ u¿yta w teœcie:",
+                    IDC_STATIC,13,19,154,18
+    LTEXT           "1%",IDC_STATIC,18,62,10,8
+    LTEXT           "100%",IDC_STATIC,186,62,18,8
+    CTEXT           "-",IDC_BENCH_SIZE,47,62,121,8
+    CONTROL         "Progress1",IDC_BENCH_DONE,"msctls_progress32",
+                    PBS_SMOOTH | WS_BORDER,7,186,202,8
+    GROUPBOX        "Ustawienia testu",IDC_STATIC,7,7,202,111
+    CTEXT           "Gotów",IDC_BENCH_OP,7,196,202,10
+    GROUPBOX        "  Wyniki testu (w MB/s)  ",IDC_STATIC,7,120,202,61,
+                    BS_CENTER
+    LTEXT           "Odczyt:",IDC_STATIC,22,145,25,8
+    LTEXT           "Zapis:",IDC_STATIC,22,156,20,8
+    LTEXT           "Kopiowanie:",IDC_STATIC,22,167,40,8
+    RTEXT           "-",IDC_I_READ,62,145,28,8
+    RTEXT           "-",IDC_I_WRITE,62,156,28,8
+    RTEXT           "-",IDC_I_MOVE,62,167,28,8
+    LTEXT           "Iloœæ przejœæ:",IDC_STATIC,15,77,42,8
+    CTEXT           "-",IDC_PASSES_STR,77,77,14,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,14,95,186,1
+    CTEXT           "-",IDC_TOTAL_STR,25,102,165,8
+    ICON            IDI_BENCHMARK,IDC_STATIC,175,17,20,20,SS_SUNKEN
+    CTEXT           "Podwójny dostep (32-bit)",IDC_STATIC,13,131,90,10,
+                    SS_SUNKEN
+    LTEXT           "Odczyt:",IDC_STATIC,124,145,25,8
+    LTEXT           "Zapis:",IDC_STATIC,124,156,20,8
+    LTEXT           "Kopiowanie:",IDC_STATIC,124,167,40,8
+    RTEXT           "-",IDC_L_READ,164,145,28,8
+    RTEXT           "-",IDC_L_WRITE,164,156,28,8
+    RTEXT           "-",IDC_L_MOVE,164,167,28,8
+    CTEXT           "Liniowy dostep (32-bit)",IDC_STATIC,112,131,90,10,
+                    SS_SUNKEN
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(MEMSTAT_LANG_PL)
+#if defined(APSTUDIO_INVOKED)
+IDD_CFG_ABOUT$(MEMSTAT_LANG_PL) DIALOG DISCARDABLE  0, 0, 194, 163
+#else
+IDD_CFG_ABOUT DIALOG DISCARDABLE  0, 0, 194, 163
+#endif
+STYLE DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDI_MEM,IDC_STATIC,25,7,20,20,SS_SUNKEN
+    LTEXT           "Copyright (c) 1999-2002 Patryk Bajer",IDC_STATIC,57,18,
+                    116,8
+    GROUPBOX        "Kontakt z autorem:",IDC_STATIC,4,31,186,43
+    EDITTEXT        IDC_EMAIL,17,43,98,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    CTEXT           "MemStat XP wydawany jest ABSOLUTNIE BEZ ¯ADNEJ GWARANCJI. To jest wolne oprogramowanie i mile widziane jest dalsze rozpowszechnianie go przez Ciebie na okreœlonych warunkach. Szczegó³y zawiera licencja GNU.",
+                    IDC_STATIC,16,110,161,42
+    LTEXT           "-",IDC_VERSTR,57,7,126,8
+    GROUPBOX        "Licencja:",IDC_STATIC,4,77,186,82
+    CTEXT           "Ten program jest rozpowszechniany na zasadach licencji GNU. Szczegó³y w pliku README.TXT.",
+                    IDC_STATIC,17,88,158,19
+    PUSHBUTTON      "WejdŸ na\nstronê programu!",IDC_WWW,121,43,60,24,
+                    BS_MULTILINE
+    LTEXT           "http://www.memstat.prv.pl/",IDC_STATIC,21,57,88,8
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(MEMSTAT_LANG_PL)
+#if defined(APSTUDIO_INVOKED)
+IDD_CFG_ADVANCED$(MEMSTAT_LANG_PL) DIALOG DISCARDABLE  0, 0, 194, 181
+#else
+IDD_CFG_ADVANCED DIALOG DISCARDABLE  0, 0, 194, 181
+#endif
+STYLE DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Uruchom MemStat XP wraz z systemem Windows",
+                    IDC_AUTOSTART,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,
+                    14,172,10
+    CONTROL         "Zwolnij fizyczn¹ pamiêæ podczas startu:",IDC_FASCHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,26,140,10
+    CONTROL         "",IDC_FASSLIDER,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,21,39,107,15
+    CONTROL         "Aktywuj logowanie podczas startu",IDC_AUTOMSL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,59,123,10
+    CONTROL         "Zapisz ustawienia programu przy zamykaniu",IDC_AUTOSAVE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,71,153,10
+    PUSHBUTTON      "Zapisz ustawienia",IDC_SAVECFG,15,163,75,14
+    PUSHBUTTON      "Przywróæ ustawienia",IDC_RESETCFG,104,163,75,14
+    GROUPBOX        "Opcje uruchamiania i zamykania:",IDC_STATIC,4,2,186,85
+    GROUPBOX        "Zaawansowane opcje zwalniania:",IDC_STATIC,4,90,186,63
+    LTEXT           "0 MB",IDC_FASTXT,129,41,51,8
+    COMBOBOX        IDC_PRIORITY,116,100,67,47,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Priorytet w¹tka zwalniaj¹cego:",IDC_STATIC,14,103,96,8
+    LTEXT           "Maksymalna iloœæ prób zwalniania:",IDC_STATIC,13,119,
+                    108,8
+    COMBOBOX        IDC_MAXRETRIES,127,116,56,61,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_MAX_TIME,136,133,47,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Limit czasu zwalniania (sekundy):",IDC_LIMITENABLED,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,134,118,10
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(MEMSTAT_LANG_PL)
+#if defined(APSTUDIO_INVOKED)
+IDD_CFG_FREEING$(MEMSTAT_LANG_PL) DIALOGEX 0, 0, 194, 182
+#else
+IDD_CFG_FREEING DIALOGEX 0, 0, 194, 182
+#endif
+STYLE DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_MINFREE,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | TBS_NOTICKS | WS_TABSTOP,43,40,126,15,
+                    WS_EX_TRANSPARENT
+    CONTROL         "",IDC_FREETO,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | 
+                    WS_TABSTOP,43,55,126,15
+    CONTROL         "HotKey1",IDC_HOTKEYFREENOW,"msctls_hotkey32",WS_BORDER | 
+                    WS_TABSTOP,102,114,65,14
+    CONTROL         "",IDC_MANUALFREE,"msctls_trackbar32",WS_TABSTOP,10,132,
+                    159,18
+    PUSHBUTTON      "-",IDC_FREENOW,33,150,114,22,BS_CENTER | BS_VCENTER | 
+                    BS_MULTILINE
+    CTEXT           "0.0 MB",IDC_SHOWFREETO,45,74,36,8,SS_CENTERIMAGE
+    LTEXT           "(0%)",IDC_PERCFREETO,85,74,24,8
+    GROUPBOX        "Automatyczne zwalnianie pamiêci:",IDC_STATIC,4,2,172,98
+    GROUPBOX        "Rêczne zwalnianie pamiêci:",IDC_STATIC,4,103,172,75
+    LTEXT           "0%",IDC_STATIC,47,29,10,8
+    LTEXT           "100%",IDC_STATIC,155,29,18,8
+    RTEXT           "Minimum:",IDC_STATIC,8,44,33,8
+    RTEXT           "Zwolnij do:",IDC_STATIC,5,59,36,8
+    RTEXT           "Zwolnij do",IDC_STATIC,10,74,33,8
+    RTEXT           "jeœli spadnie poni¿ej",IDC_STATIC,24,85,65,8
+    CTEXT           "0.0 MB",IDC_SHOWMIN,92,85,36,8,SS_CENTERIMAGE
+    LTEXT           "(0%)",IDC_PERCMIN,131,85,24,8
+    LTEXT           "pamiêci fizycznej",IDC_STATIC,112,74,54,8
+    CTEXT           "- iloœæ pamiêci fizycznej -",IDC_STATIC,68,29,78,8
+    LTEXT           "Hotkey zwalniania pamiêci:",IDC_STATIC,11,116,86,8
+    LTEXT           "0%",IDC_STATIC,13,153,10,8
+    LTEXT           "100%",IDC_STATIC,154,153,18,8
+    CONTROL         "Progress1",IDC_FREEING,"msctls_progress32",PBS_VERTICAL | 
+                    PBS_SMOOTH,180,6,10,172
+    CONTROL         "W³¹czona",IDC_AUTOENABLED,"Button",BS_AUTORADIOBUTTON,
+                    64,14,49,10
+    CONTROL         "Wy³¹czona",IDC_AUTODISABLED,"Button",BS_AUTORADIOBUTTON,
+                    118,14,53,10
+    LTEXT           "Ta opcja jest:",IDC_STATIC,16,14,44,8
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(MEMSTAT_LANG_PL)
+#if defined(APSTUDIO_INVOKED)
+IDD_CFG_MONITORING$(MEMSTAT_LANG_PL) DIALOG DISCARDABLE  0, 0, 194, 179
+#else
+IDD_CFG_MONITORING DIALOG DISCARDABLE  0, 0, 194, 179
+#endif
+STYLE DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_INTERVAL,109,13,32,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    PUSHBUTTON      "",IDC_MSL,55,64,83,14
+    EDITTEXT        IDC_LOGFILE,60,86,120,13,ES_AUTOHSCROLL
+    CONTROL         "Tryb dopisywania (zamiast nadpisywania)",IDC_LOGAPPEND,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,106,145,10
+    CONTROL         "Ogranicz plik do:",IDC_LOGLIMIT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,122,69,10
+    EDITTEXT        IDC_MAXLOGSIZE,84,121,53,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    GROUPBOX        "Ustawienia w¹tka monitoruj¹cego:",IDC_STATIC,4,2,186,30
+    LTEXT           "Pobierz informacje co:",IDC_STATIC,33,15,70,8
+    LTEXT           "ms",IDC_STATIC,147,15,10,8
+    GROUPBOX        "Ustawienia logowania:",IDC_STATIC,4,34,186,140
+    LTEXT           "Nazwa pliku:",IDC_STATIC,13,88,42,8
+    PUSHBUTTON      "Browse...",IDC_BROWSE,144,85,36,12,NOT WS_VISIBLE
+    LTEXT           "kilobajtów",IDC_STATIC,142,123,32,8
+    CTEXT           "",IDC_MSLINFO,14,49,166,8
+    PUSHBUTTON      "Format logowania...",IDC_EDITFORMAT,108,154,71,14,
+                    BS_CENTER | BS_VCENTER
+    CONTROL         "Zapis bezpoœredni (pomija systemowy cache)",
+                    IDC_DIRECTWRITE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,
+                    138,157,10
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(MEMSTAT_LANG_PL)
+#if defined(APSTUDIO_INVOKED)
+IDD_MAIN$(MEMSTAT_LANG_PL) DIALOGEX 0, 0, 208, 231
+#else
+IDD_MAIN DIALOGEX 0, 0, 208, 231
+#endif
+STYLE DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+CAPTION "Konfiguracja MemStat XP"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Zamknij",IDCLOSE,154,209,50,18,BS_MULTILINE
+    CONTROL         "",IDC_CFGTAB,"SysTabControl32",TCS_FOCUSONBUTTONDOWN | 
+                    WS_TABSTOP,4,4,200,201
+    CONTROL         "",IDC_FREEBAR,"msctls_progress32",PBS_SMOOTH,4,209,145,
+                    8
+    LTEXT           "Wolna pamiêæ fizyczna:",IDC_STATIC,4,219,76,8
+    RTEXT           "...",IDC_FREETXT,84,219,65,8
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(MEMSTAT_LANG_PL)
+#if defined(APSTUDIO_INVOKED)
+IDD_RGB$(MEMSTAT_LANG_PL) DIALOGEX 0, 0, 221, 84
+#else
+IDD_RGB DIALOGEX 0, 0, 221, 84
+#endif
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Wybierz kolor (RGB)"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_RED,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | 
+                    WS_TABSTOP,34,18,95,9
+    CONTROL         "",IDC_GREEN,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | 
+                    WS_TABSTOP,34,31,95,9
+    CONTROL         "",IDC_BLUE,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | 
+                    WS_TABSTOP,34,44,95,9
+    PUSHBUTTON      "Anuluj",IDCANCEL,4,66,50,14
+    DEFPUSHBUTTON   "OK",IDOK,167,66,50,14
+    LTEXT           "Red",IDC_STATIC,10,18,14,8
+    LTEXT           "Green",IDC_STATIC,10,30,20,8
+    LTEXT           "Blue",IDC_STATIC,10,43,15,8
+    GROUPBOX        "Sk³adowe koloru:",IDC_STATIC,4,4,151,56
+    GROUPBOX        "Kolor:",IDC_STATIC,157,4,60,56
+    CTEXT           "---",IDC_RTXT,133,18,16,8
+    CTEXT           "---",IDC_GTXT,133,31,16,8
+    CTEXT           "---",IDC_BTXT,133,44,16,8
+    CONTROL         "",IDC_COLOR,"Static",SS_OWNERDRAW,167,16,40,36,
+                    WS_EX_CLIENTEDGE
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(MEMSTAT_LANG_PL)
+#if defined(APSTUDIO_INVOKED)
+IDD_CFG_APPEARANCE$(MEMSTAT_LANG_PL) DIALOG DISCARDABLE  0, 0, 194, 185
+#else
+IDD_CFG_APPEARANCE DIALOG DISCARDABLE  0, 0, 194, 185
+#endif
+STYLE DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_BGCOLOR,"Button",BS_OWNERDRAW | WS_TABSTOP,68,11,
+                    21,11
+    CONTROL         "",IDC_LINECOLOR,"Button",BS_OWNERDRAW | WS_TABSTOP,157,
+                    11,21,11
+    CONTROL         "",IDC_FGCOLOR,"Button",BS_OWNERDRAW | WS_TABSTOP,68,24,
+                    21,11
+    CONTROL         "",IDC_TEXTCOLOR,"Button",BS_OWNERDRAW | WS_TABSTOP,157,
+                    24,21,11
+    CONTROL         "HotKey1",IDC_HOTKEYCHART,"msctls_hotkey32",WS_BORDER | 
+                    WS_TABSTOP,93,68,65,14
+    GROUPBOX        "Ustawienia okna wykresu:",IDC_STATIC,4,57,186,75
+    RTEXT           "T³o wykresu",IDC_STATIC,22,13,40,8
+    RTEXT           "Linia wykresu",IDC_STATIC,18,26,44,8
+    RTEXT           "Linie poziome",IDC_STATIC,108,13,44,8
+    RTEXT           "Kolor tekstu",IDC_STATIC,113,26,38,8
+    GROUPBOX        "Ustawienia ikonki zasobnika:",IDC_STATIC,4,134,186,47
+    LTEXT           "Hotkey okienka:",IDC_STATIC,36,70,53,8
+    CONTROL         "Klepsydra gdy zwalniasz",IDC_BUSY_ICON,"Button",
+                    BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,11,163,92,10
+    CONTROL         "",IDC_BGCAPTION,"Button",BS_OWNERDRAW | WS_TABSTOP,68,
+                    37,21,11
+    CONTROL         "",IDC_TEXTCAPTION,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    157,37,21,11
+    RTEXT           "T³o nag³ówka",IDC_STATIC,16,39,46,8
+    RTEXT           "Tekst nag³ówka",IDC_STATIC,98,39,53,8
+    GROUPBOX        "Kolory okna wykresu:",IDC_STATIC,4,2,186,53
+    COMBOBOX        IDC_ICONSTYLE,53,146,55,48,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Format nag³ówka...",IDC_CAPTIONFORMAT,108,87,73,14
+    PUSHBUTTON      "Format dymka...",IDC_TOOLTIPFORMAT,118,145,63,14
+    LTEXT           "Styl ikonki:",IDC_STATIC,12,148,35,8
+    CONTROL         "Zawsze na wierzchu",IDC_AOT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,86,81,10
+    CONTROL         "Przezroczystoœæ:",IDC_CW_BLEND,"Button",BS_AUTOCHECKBOX | 
+                    BS_VCENTER | BS_MULTILINE | WS_TABSTOP,11,114,66,10
+    CONTROL         "Slider1",IDC_BLEND_FACTOR,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,95,111,89,15
+    LTEXT           "-",IDC_BLEND_PERC,77,115,19,8
+    CONTROL         "Autoskalowanie osi Y",IDC_AUTOSCALE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,11,100,83,10
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(MEMSTAT_LANG_PL)
+#if defined(APSTUDIO_INVOKED)
+IDD_FORMAT$(MEMSTAT_LANG_PL) DIALOG DISCARDABLE  0, 0, 231, 185
+#else
+IDD_FORMAT DIALOG DISCARDABLE  0, 0, 231, 185
+#endif
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,57,166,50,14
+    PUSHBUTTON      "Anuluj",IDCANCEL,123,166,50,14
+    LTEXT           "Format:",IDC_STATIC,5,6,24,8
+    EDITTEXT        IDC_FORMAT,45,5,181,12,ES_AUTOHSCROLL | ES_NOHIDESEL
+    LISTBOX         IDC_ELEMENTS,12,32,149,76,LBS_USETABSTOPS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&oryginalna",IDC_BYTES,"Button",BS_AUTORADIOBUTTON,171,
+                    43,48,10
+    CONTROL         "kilo (&K)",IDC_KILOBYTES,"Button",BS_AUTORADIOBUTTON,
+                    171,54,37,10
+    CONTROL         "mega (&M)",IDC_MEGABYTES,"Button",BS_AUTORADIOBUTTON,
+                    171,65,45,10
+    CONTROL         "giga (&G)",IDC_GIGABYTES,"Button",BS_AUTORADIOBUTTON,
+                    171,76,41,10
+    GROUPBOX        "Dodawanie elementów:",IDC_STATIC,5,21,221,93
+    LTEXT           "Jednostka:",IDC_STATIC,172,32,36,8
+    PUSHBUTTON      "Dodaj",IDC_ADDITEM,169,93,51,14
+    CTEXT           "-",IDC_FORMAT_PREVIEW,5,128,221,28,SS_NOPREFIX | 
+                    SS_SUNKEN
+    LTEXT           "Podgl¹d:",IDC_STATIC,5,118,29,8
+END
+#endif
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(MEMSTAT_LANG_PL)
+#if defined(APSTUDIO_INVOKED)
+IDR_TRAYMENU2$(MEMSTAT_LANG_PL) MENU DISCARDABLE 
+#else
+IDR_TRAYMENU2 MENU DISCARDABLE 
+#endif
+BEGIN
+    POPUP "-"
+    BEGIN
+        MENUITEM "Okno wykresu",                ID_MEMCHART
+        POPUP "Styl ikonki"
+        BEGIN
+            MENUITEM "Chip",                        IDC_IS_CHIP
+            MENUITEM "Cztery paski",                IDC_IS_FOURBARS
+            MENUITEM "Miniwykres",                  IDC_IS_MINICHART
+            MENUITEM "Numeryczny",                  IDC_IS_NUMERICAL
+            MENUITEM "Cyfrowy",                     IDC_IS_NUMERICAL2
+        END
+        POPUP "Konfiguracja"
+        BEGIN
+            MENUITEM "Zwalnianie",                  ID_CFG_FREEING
+            MENUITEM "Monitorowanie",               ID_CFG_MONITORING
+            MENUITEM "Wygl¹d",                      ID_CFG_APPEARANCE
+            MENUITEM "Zaawansowane",                ID_CFG_ADVANCED
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Przerwij zwalnianie",         ID_CANCELFREE
+        MENUITEM "Automatyczne zwalnianie",     ID_AUTOFREE
+        MENUITEM SEPARATOR
+        MENUITEM "Test szybkoœci pamieci...",   ID_MEM_BENCH, GRAYED
+        POPUP "Inne"
+        BEGIN
+            MENUITEM "Wygaszacz ekranu",            ID_SSAVER, GRAYED
+            MENUITEM "Wyczyœæ schowek",             ID_CLEARCLIPBOARD
+            MENUITEM SEPARATOR
+            MENUITEM "O programie...",              ID_ABOUT
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Zamknij MemStat XP",          ID_EXIT
+    END
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(MEMSTAT_LANG_PL)
+#if defined(APSTUDIO_INVOKED)
+IDR_CHARTMENU$(MEMSTAT_LANG_PL) MENU DISCARDABLE 
+#else
+IDR_CHARTMENU MENU DISCARDABLE 
+#endif
+BEGIN
+    POPUP "-"
+    BEGIN
+        MENUITEM "Umieœæ obok zasobnika",       ID_MOVE2TRAY
+        MENUITEM SEPARATOR
+        MENUITEM "Autoskalowanie osi &Y",       ID_AUTOYSCALE
+        MENUITEM "Z&awsze na wierzchu",         ID_AOT
+        MENUITEM SEPARATOR
+        MENUITEM "&Konfiguracja",               ID_CONFIG
+        MENUITEM SEPARATOR
+        MENUITEM "&Ukryj",                      ID_HIDE
+        MENUITEM "&Zamknij MemStat XP",         ID_EXIT
+    END
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(MEMSTAT_LANG_PL)
+#if defined(APSTUDIO_INVOKED)
+IDR_TRAYMENU$(MEMSTAT_LANG_PL) MENU DISCARDABLE 
+#else
+IDR_TRAYMENU MENU DISCARDABLE 
+#endif
+BEGIN
+    POPUP "-"
+    BEGIN
+        MENUITEM "Okno wykresu",                ID_MEMCHART
+        POPUP "Styl ikonki"
+        BEGIN
+            MENUITEM "Chip",                        IDC_IS_CHIP
+            MENUITEM "Cztery paski",                IDC_IS_FOURBARS
+            MENUITEM "Miniwykres",                  IDC_IS_MINICHART
+            MENUITEM "Numeryczny",                  IDC_IS_NUMERICAL
+            MENUITEM "Cyfrowy",                     IDC_IS_NUMERICAL2
+        END
+        POPUP "Konfiguracja"
+        BEGIN
+            MENUITEM "Zwalnianie",                  ID_CFG_FREEING
+            MENUITEM "Monitorowanie",               ID_CFG_MONITORING
+            MENUITEM "Wygl¹d",                      ID_CFG_APPEARANCE
+            MENUITEM "Zaawansowane",                ID_CFG_ADVANCED
+        END
+        MENUITEM SEPARATOR
+        POPUP "Zwolnij"
+        BEGIN
+            MENUITEM "1 MB",                        ID__FREEUP_1MB
+            MENUITEM "2 MB",                        ID__FREEUP_2MB
+            MENUITEM "4 MB",                        ID__FREEUP_4MB
+            MENUITEM "8 MB",                        ID__FREEUP_8MB
+            MENUITEM "16 MB",                       ID__FREEUP_16MB
+            MENUITEM "32 MB",                       ID__FREEUP_32MB
+            MENUITEM "64 MB",                       ID__FREEUP_64MB
+            MENUITEM "128 MB",                      ID__FREEUP_128MB
+            MENUITEM SEPARATOR
+            MENUITEM "Ile siê da",                  ID_FREEUP_ALLPOSSIBLE
+        END
+        MENUITEM "-",                           ID_FREENOW
+        MENUITEM "Automatyczne zwalnianie",     ID_AUTOFREE
+        MENUITEM SEPARATOR
+        MENUITEM "Test szybkoœci pamiêci...",   ID_MEM_BENCH
+        POPUP "Inne"
+        BEGIN
+            MENUITEM "Wygaszacz ekranu",            ID_SSAVER
+            MENUITEM "Wyczyœæ schowek",             ID_CLEARCLIPBOARD
+            MENUITEM SEPARATOR
+            MENUITEM "O programie...",              ID_ABOUT
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Zamknij MemStat XP",          ID_EXIT
+    END
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(MEMSTAT_LANG_PL)
+#if defined(APSTUDIO_INVOKED)
+IDR_APPEARANCE$(MEMSTAT_LANG_PL) MENU DISCARDABLE 
+#else
+IDR_APPEARANCE MENU DISCARDABLE 
+#endif
+BEGIN
+    POPUP "-"
+    BEGIN
+        MENUITEM "Pobierz kolory z systemu",    ID_SYSCOLORS
+    END
+END
+#endif
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resrc1.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""resource.h""\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "IDD_FORMAT$(MEMSTAT_LANG_PL)", DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 226
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 180
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Polish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral (Sys. Default) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEUSD)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_SYS_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(MEMSTAT_LANG_US)
+#if defined(APSTUDIO_INVOKED)
+IDD_CFG_FREEING$(MEMSTAT_LANG_US) DIALOGEX 0, 0, 194, 182
+#else
+IDD_CFG_FREEING DIALOGEX 0, 0, 194, 182
+#endif
+STYLE DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_MINFREE,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | TBS_NOTICKS | WS_TABSTOP,43,40,126,15,
+                    WS_EX_TRANSPARENT
+    CONTROL         "",IDC_FREETO,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | 
+                    WS_TABSTOP,43,55,126,15
+    CONTROL         "HotKey1",IDC_HOTKEYFREENOW,"msctls_hotkey32",WS_BORDER | 
+                    WS_TABSTOP,91,114,76,14
+    CONTROL         "",IDC_MANUALFREE,"msctls_trackbar32",WS_TABSTOP,10,132,
+                    159,18
+    PUSHBUTTON      "-",IDC_FREENOW,33,150,114,22,BS_CENTER | BS_VCENTER | 
+                    BS_MULTILINE
+    CTEXT           "0.0 MB",IDC_SHOWFREETO,39,74,36,8,SS_CENTERIMAGE
+    LTEXT           "(0%)",IDC_PERCFREETO,79,74,24,8
+    GROUPBOX        "Automatic memory freeing:",IDC_STATIC,4,2,172,98
+    GROUPBOX        "Manual memory freeing:",IDC_STATIC,4,101,172,77
+    LTEXT           "0%",IDC_STATIC,47,29,10,8
+    LTEXT           "100%",IDC_STATIC,155,29,18,8
+    RTEXT           "Minimum:",IDC_STATIC,8,44,33,8
+    RTEXT           "Free to:",IDC_STATIC,5,59,36,8
+    RTEXT           "Free to",IDC_STATIC,12,74,23,8
+    RTEXT           "if it drops below",IDC_STATIC,31,85,53,8
+    CTEXT           "0.0 MB",IDC_SHOWMIN,87,85,36,8,SS_CENTERIMAGE
+    LTEXT           "(0%)",IDC_PERCMIN,126,85,24,8
+    LTEXT           "of physical memory",IDC_STATIC,108,74,60,8
+    CTEXT           "- amount of physical memory -",IDC_STATIC,59,29,94,8
+    LTEXT           "Manual freeing hotkey:",IDC_STATIC,15,116,73,8
+    LTEXT           "0%",IDC_STATIC,13,153,10,8
+    LTEXT           "100%",IDC_STATIC,154,153,18,8
+    CONTROL         "Progress1",IDC_FREEING,"msctls_progress32",PBS_VERTICAL | 
+                    PBS_SMOOTH,180,6,10,172
+    CONTROL         "Enabled",IDC_AUTOENABLED,"Button",BS_AUTORADIOBUTTON,73,
+                    14,42,10
+    CONTROL         "Disabled",IDC_AUTODISABLED,"Button",BS_AUTORADIOBUTTON,
+                    118,14,43,10
+    LTEXT           "This feature is:",IDC_STATIC,20,14,47,8
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(MEMSTAT_LANG_US)
+#if defined(APSTUDIO_INVOKED)
+IDD_CFG_ABOUT$(MEMSTAT_LANG_US) DIALOG DISCARDABLE  0, 0, 194, 163
+#else
+IDD_CFG_ABOUT DIALOG DISCARDABLE  0, 0, 194, 163
+#endif
+STYLE DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDI_MEM,IDC_STATIC,25,7,20,20,SS_SUNKEN
+    LTEXT           "Copyright (c) 1999-2002 Patryk Bajer",IDC_STATIC,57,18,
+                    116,8
+    GROUPBOX        "Contact author:",IDC_STATIC,4,31,186,43
+    EDITTEXT        IDC_EMAIL,24,43,98,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    CTEXT           "MemStat XP comes with ABSOLUTELLY NO WARRANY. This is free software and you are welcomed to redistribute it under certain conditions. For more informations read GNU General Public License.",
+                    IDC_STATIC,16,112,161,42
+    LTEXT           "-",IDC_VERSTR,57,7,126,8
+    GROUPBOX        "License:",IDC_STATIC,4,77,186,82
+    CTEXT           "This program is distributed under GNU General Public License. See README.TXT for details.",
+                    IDC_STATIC,24,89,146,19
+    PUSHBUTTON      "Visit\nhomepage",IDC_WWW,138,43,43,24,BS_MULTILINE
+    LTEXT           "http://www.memstat.prv.pl/",IDC_STATIC,29,57,88,8
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(MEMSTAT_LANG_US)
+#if defined(APSTUDIO_INVOKED)
+IDD_CFG_MONITORING$(MEMSTAT_LANG_US) DIALOG DISCARDABLE  0, 0, 194, 179
+#else
+IDD_CFG_MONITORING DIALOG DISCARDABLE  0, 0, 194, 179
+#endif
+STYLE DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_INTERVAL,108,13,32,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    PUSHBUTTON      "",IDC_MSL,52,64,89,14
+    EDITTEXT        IDC_LOGFILE,48,86,132,13,ES_AUTOHSCROLL
+    CONTROL         "Append mode (instead of overwriting)",IDC_LOGAPPEND,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,106,133,10
+    CONTROL         "Limit log file size to:",IDC_LOGLIMIT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,122,76,10
+    EDITTEXT        IDC_MAXLOGSIZE,91,121,53,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    GROUPBOX        "Monitoring thread settings:",IDC_STATIC,4,2,186,30
+    LTEXT           "Get information every:",IDC_STATIC,34,15,70,8
+    LTEXT           "ms",IDC_STATIC,145,15,10,8
+    GROUPBOX        "Logging settings:",IDC_STATIC,4,34,186,140
+    LTEXT           "Filename:",IDC_STATIC,13,88,31,8
+    PUSHBUTTON      "Browse...",IDC_BROWSE,144,88,36,12,NOT WS_VISIBLE
+    LTEXT           "kilobytes",IDC_STATIC,149,123,28,8
+    CTEXT           "",IDC_MSLINFO,14,49,166,8
+    PUSHBUTTON      "Log format...",IDC_EDITFORMAT,115,154,64,14,BS_CENTER | 
+                    BS_VCENTER
+    CONTROL         "Direct writing (bypasses system write-cache)",
+                    IDC_DIRECTWRITE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,
+                    138,154,10
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(MEMSTAT_LANG_US)
+#if defined(APSTUDIO_INVOKED)
+IDD_RGB$(MEMSTAT_LANG_US) DIALOGEX 0, 0, 221, 84
+#else
+IDD_RGB DIALOGEX 0, 0, 221, 84
+#endif
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Choose RGB color"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_RED,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | 
+                    WS_TABSTOP,34,18,95,9
+    CONTROL         "",IDC_GREEN,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | 
+                    WS_TABSTOP,34,31,95,9
+    CONTROL         "",IDC_BLUE,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | 
+                    WS_TABSTOP,34,44,95,9
+    PUSHBUTTON      "Cancel",IDCANCEL,4,66,50,14
+    DEFPUSHBUTTON   "OK",IDOK,167,66,50,14
+    LTEXT           "Red",IDC_STATIC,10,18,14,8
+    LTEXT           "Green",IDC_STATIC,10,30,20,8
+    LTEXT           "Blue",IDC_STATIC,10,43,15,8
+    GROUPBOX        "Color components:",IDC_STATIC,4,4,151,56
+    GROUPBOX        "Color:",IDC_STATIC,157,4,60,56
+    CTEXT           "---",IDC_RTXT,133,18,16,8
+    CTEXT           "---",IDC_GTXT,133,31,16,8
+    CTEXT           "---",IDC_BTXT,133,44,16,8
+    CONTROL         "",IDC_COLOR,"Static",SS_OWNERDRAW,167,16,40,36,
+                    WS_EX_CLIENTEDGE
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(MEMSTAT_LANG_US)
+#if defined(APSTUDIO_INVOKED)
+IDD_MAIN$(MEMSTAT_LANG_US) DIALOGEX 0, 0, 208, 231
+#else
+IDD_MAIN DIALOGEX 0, 0, 208, 231
+#endif
+STYLE DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+CAPTION "MemStat XP Configuration"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Close",IDCLOSE,154,209,50,18,BS_MULTILINE
+    CONTROL         "",IDC_CFGTAB,"SysTabControl32",TCS_FOCUSONBUTTONDOWN | 
+                    WS_TABSTOP,4,4,200,201
+    CONTROL         "",IDC_FREEBAR,"msctls_progress32",PBS_SMOOTH,4,209,145,
+                    8
+    LTEXT           "Free physical memory:",IDC_STATIC,4,219,70,8
+    RTEXT           "...",IDC_FREETXT,84,219,65,8
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(MEMSTAT_LANG_US)
+#if defined(APSTUDIO_INVOKED)
+IDD_CFG_APPEARANCE$(MEMSTAT_LANG_US) DIALOG DISCARDABLE  0, 0, 194, 185
+#else
+IDD_CFG_APPEARANCE DIALOG DISCARDABLE  0, 0, 194, 185
+#endif
+STYLE DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_BGCOLOR,"Button",BS_OWNERDRAW | WS_TABSTOP,79,11,
+                    21,11
+    CONTROL         "",IDC_LINECOLOR,"Button",BS_OWNERDRAW | WS_TABSTOP,157,
+                    11,21,11
+    CONTROL         "",IDC_FGCOLOR,"Button",BS_OWNERDRAW | WS_TABSTOP,79,24,
+                    21,11
+    CONTROL         "",IDC_TEXTCOLOR,"Button",BS_OWNERDRAW | WS_TABSTOP,157,
+                    24,21,11
+    CONTROL         "HotKey1",IDC_HOTKEYCHART,"msctls_hotkey32",WS_BORDER | 
+                    WS_TABSTOP,93,68,72,14
+    GROUPBOX        "Chart window settings:",IDC_STATIC,4,57,186,75
+    RTEXT           "Background",IDC_STATIC,35,13,40,8
+    RTEXT           "Chart line",IDC_STATIC,45,26,30,8
+    RTEXT           "Horizontal lines",IDC_STATIC,104,13,48,8
+    RTEXT           "Chart text",IDC_STATIC,119,26,31,8
+    LTEXT           "Show/hide hotkey:",IDC_STATIC,28,70,61,8
+    CONTROL         "",IDC_BGCAPTION,"Button",BS_OWNERDRAW | WS_TABSTOP,79,
+                    37,21,11
+    CONTROL         "",IDC_TEXTCAPTION,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    157,37,21,11
+    RTEXT           "Caption background",IDC_STATIC,9,39,65,8
+    RTEXT           "Caption text",IDC_STATIC,113,39,38,8
+    GROUPBOX        "Chart window colors:",IDC_STATIC,4,2,186,53
+    GROUPBOX        "Tray icon settings:",IDC_STATIC,4,134,186,47
+    CONTROL         "Hourglass when freeing",IDC_BUSY_ICON,"Button",
+                    BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,11,163,90,10
+    COMBOBOX        IDC_ICONSTYLE,50,146,51,48,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Caption format...",IDC_CAPTIONFORMAT,116,87,65,14
+    PUSHBUTTON      "Tooltip format...",IDC_TOOLTIPFORMAT,112,145,69,14
+    LTEXT           "Icon style:",IDC_STATIC,12,148,33,8
+    CONTROL         "&Always on top",IDC_AOT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,86,60,10
+    CONTROL         "Transparency:",IDC_CW_BLEND,"Button",BS_AUTOCHECKBOX | 
+                    BS_VCENTER | BS_MULTILINE | WS_TABSTOP,11,114,60,10
+    CONTROL         "Slider1",IDC_BLEND_FACTOR,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,95,111,89,15
+    LTEXT           "-",IDC_BLEND_PERC,71,115,23,8
+    CONTROL         "Automatic Y-axis scaling",IDC_AUTOSCALE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,11,100,92,10
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(MEMSTAT_LANG_US)
+#if defined(APSTUDIO_INVOKED)
+IDD_CFG_ADVANCED$(MEMSTAT_LANG_US) DIALOG DISCARDABLE  0, 0, 194, 181
+#else
+IDD_CFG_ADVANCED DIALOG DISCARDABLE  0, 0, 194, 181
+#endif
+STYLE DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Load MemStat XP when starting Windows",IDC_AUTOSTART,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,14,149,10
+    CONTROL         "Free physical memory at program startup:",IDC_FASCHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,26,144,10
+    CONTROL         "",IDC_FASSLIDER,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,21,39,110,15
+    CONTROL         "Enable logging at startup",IDC_AUTOMSL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,57,94,10
+    CONTROL         "Automatically save settings on exit",IDC_AUTOSAVE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,69,123,10
+    PUSHBUTTON      "Save settings",IDC_SAVECFG,29,163,60,14
+    PUSHBUTTON      "Reload settings",IDC_RESETCFG,105,163,60,14
+    GROUPBOX        "Startup and exit settings:",IDC_STATIC,4,2,186,82
+    LTEXT           "0 MB",IDC_FASTXT,131,42,52,8
+    GROUPBOX        "Advanced freeing options:",IDC_STATIC,4,88,186,64
+    COMBOBOX        IDC_PRIORITY,90,99,90,47,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Freeing thread priority:",IDC_STATIC,13,101,70,8
+    LTEXT           "Try free not more than:",IDC_STATIC,13,119,72,8
+    COMBOBOX        IDC_MAXRETRIES,90,116,46,61,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_MAX_TIME,142,134,38,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Memory freeing time limit (seconds):",IDC_LIMITENABLED,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,135,124,10
+    LTEXT           "times",IDC_STATIC,140,119,17,8
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(MEMSTAT_LANG_US)
+#if defined(APSTUDIO_INVOKED)
+IDD_BENCHMARK$(MEMSTAT_LANG_US) DIALOG DISCARDABLE  0, 0, 216, 230
+#else
+IDD_BENCHMARK DIALOG DISCARDABLE  0, 0, 216, 230
+#endif
+STYLE DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "MemStat XP Memory Benchmark"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Slider1",IDC_BENCH_PERC,"msctls_trackbar32",WS_TABSTOP,
+                    13,41,189,20
+    CONTROL         "Slider2",IDC_BENCH_PASSES,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,92,74,109,15
+    PUSHBUTTON      "Run benchmark",IDOK,36,208,64,15
+    PUSHBUTTON      "Close",IDCANCEL,116,208,64,15
+    LTEXT           "Please specify amount of free physical memory\nyou want to be used in this benchmark:",
+                    IDC_STATIC,13,19,154,18
+    LTEXT           "1%",IDC_STATIC,18,62,10,8
+    LTEXT           "100%",IDC_STATIC,186,62,18,8
+    CTEXT           "-",IDC_BENCH_SIZE,47,62,121,8
+    CONTROL         "Progress1",IDC_BENCH_DONE,"msctls_progress32",
+                    PBS_SMOOTH | WS_BORDER,7,186,202,8
+    GROUPBOX        "Benchmark settings:",IDC_STATIC,7,7,202,111
+    CTEXT           "Ready",IDC_BENCH_OP,7,196,202,10
+    GROUPBOX        "  Benchmark Results (in MB/s)  ",IDC_STATIC,7,120,202,
+                    61,BS_CENTER
+    LTEXT           "Reading:",IDC_STATIC,25,145,30,8
+    LTEXT           "Writing:",IDC_STATIC,25,156,25,8
+    LTEXT           "Copying:",IDC_STATIC,25,167,28,8
+    RTEXT           "-",IDC_I_READ,62,145,28,8
+    RTEXT           "-",IDC_I_WRITE,62,156,28,8
+    RTEXT           "-",IDC_I_MOVE,62,167,28,8
+    LTEXT           "Number of passes:",IDC_STATIC,15,77,60,8
+    CTEXT           "-",IDC_PASSES_STR,77,77,14,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,14,95,186,1
+    CTEXT           "-",IDC_TOTAL_STR,25,102,165,8
+    ICON            IDI_BENCHMARK,IDC_STATIC,175,17,20,20,SS_SUNKEN
+    CTEXT           "32-bit doubled access",IDC_STATIC,13,131,90,10,
+                    SS_SUNKEN
+    LTEXT           "Reading:",IDC_STATIC,127,145,30,8
+    LTEXT           "Writing:",IDC_STATIC,127,156,25,8
+    LTEXT           "Copying:",IDC_STATIC,127,167,28,8
+    RTEXT           "-",IDC_L_READ,164,145,28,8
+    RTEXT           "-",IDC_L_WRITE,164,156,28,8
+    RTEXT           "-",IDC_L_MOVE,164,167,28,8
+    CTEXT           "32-bit linear access",IDC_STATIC,112,131,90,10,
+                    SS_SUNKEN
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(MEMSTAT_LANG_US)
+#if defined(APSTUDIO_INVOKED)
+IDD_FORMAT$(MEMSTAT_LANG_US) DIALOG DISCARDABLE  0, 0, 231, 185
+#else
+IDD_FORMAT DIALOG DISCARDABLE  0, 0, 231, 185
+#endif
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,57,166,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,123,166,50,14
+    LTEXT           "Format:",IDC_STATIC,5,6,24,8
+    EDITTEXT        IDC_FORMAT,45,5,181,12,ES_AUTOHSCROLL | ES_NOHIDESEL
+    LISTBOX         IDC_ELEMENTS,12,32,153,76,LBS_USETABSTOPS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "oryginal",IDC_BYTES,"Button",BS_AUTORADIOBUTTON,174,43,
+                    40,10
+    CONTROL         "kilo (&K)",IDC_KILOBYTES,"Button",BS_AUTORADIOBUTTON,
+                    174,54,37,10
+    CONTROL         "mega (&M)",IDC_MEGABYTES,"Button",BS_AUTORADIOBUTTON,
+                    174,65,45,10
+    CONTROL         "giga (&G)",IDC_GIGABYTES,"Button",BS_AUTORADIOBUTTON,
+                    174,76,41,10
+    GROUPBOX        "Adding items:",IDC_STATIC,5,21,221,93
+    LTEXT           "Units:",IDC_STATIC,174,32,19,8
+    PUSHBUTTON      "Add item",IDC_ADDITEM,173,93,46,14
+    CTEXT           "-",IDC_FORMAT_PREVIEW,5,128,221,28,SS_NOPREFIX | 
+                    SS_SUNKEN
+    LTEXT           "Preview:",IDC_STATIC,5,118,28,8
+END
+#endif
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(MEMSTAT_LANG_US)
+#if defined(APSTUDIO_INVOKED)
+IDR_CHARTMENU$(MEMSTAT_LANG_US) MENU DISCARDABLE 
+#else
+IDR_CHARTMENU MENU DISCARDABLE 
+#endif
+BEGIN
+    POPUP "-"
+    BEGIN
+        MENUITEM "Place near system tray",      ID_MOVE2TRAY
+        MENUITEM SEPARATOR
+        MENUITEM "Auto &Y-axis scaling",        ID_AUTOYSCALE
+        MENUITEM "&Always on top",              ID_AOT
+        MENUITEM SEPARATOR
+        MENUITEM "Configuration",               ID_CONFIG
+        MENUITEM SEPARATOR
+        MENUITEM "&Hide",                       ID_HIDE
+        MENUITEM "E&xit program",               ID_EXIT
+    END
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(MEMSTAT_LANG_US)
+#if defined(APSTUDIO_INVOKED)
+IDR_TRAYMENU$(MEMSTAT_LANG_US) MENU DISCARDABLE 
+#else
+IDR_TRAYMENU MENU DISCARDABLE 
+#endif
+BEGIN
+    POPUP "-"
+    BEGIN
+        MENUITEM "Chart window",                ID_MEMCHART
+        POPUP "Icon style"
+        BEGIN
+            MENUITEM "Chip",                        IDC_IS_CHIP
+            MENUITEM "Four bars",                   IDC_IS_FOURBARS
+            MENUITEM "Minichart",                   IDC_IS_MINICHART
+            MENUITEM "Numerical",                   IDC_IS_NUMERICAL
+            MENUITEM "Digital",                     IDC_IS_NUMERICAL2
+        END
+        POPUP "Configuration"
+        BEGIN
+            MENUITEM "Freeing",                     ID_CFG_FREEING
+            MENUITEM "Monitoring",                  ID_CFG_MONITORING
+            MENUITEM "Appearance",                  ID_CFG_APPEARANCE
+            MENUITEM "Advanced",                    ID_CFG_ADVANCED
+        END
+        MENUITEM SEPARATOR
+        POPUP "Free up"
+        BEGIN
+            MENUITEM "1 MB",                        ID__FREEUP_1MB
+            MENUITEM "2 MB",                        ID__FREEUP_2MB
+            MENUITEM "4 MB",                        ID__FREEUP_4MB
+            MENUITEM "8 MB",                        ID__FREEUP_8MB
+            MENUITEM "16 MB",                       ID__FREEUP_16MB
+            MENUITEM "32 MB",                       ID__FREEUP_32MB
+            MENUITEM "64 MB",                       ID__FREEUP_64MB
+            MENUITEM "128 MB",                      ID__FREEUP_128MB
+            MENUITEM SEPARATOR
+            MENUITEM "All possible",                ID_FREEUP_ALLPOSSIBLE
+        END
+        MENUITEM "-",                           ID_FREENOW
+        MENUITEM "Automatic memory freeing",    ID_AUTOFREE
+        MENUITEM SEPARATOR
+        MENUITEM "Memory benchmark...",         ID_MEM_BENCH
+        POPUP "Other"
+        BEGIN
+            MENUITEM "Screen saver",                ID_SSAVER
+            MENUITEM "Clear clipboard",             ID_CLEARCLIPBOARD
+            MENUITEM SEPARATOR
+            MENUITEM "About...",                    ID_ABOUT
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Exit MemStat XP",             ID_EXIT
+    END
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(MEMSTAT_LANG_US)
+#if defined(APSTUDIO_INVOKED)
+IDR_TRAYMENU2$(MEMSTAT_LANG_US) MENU DISCARDABLE 
+#else
+IDR_TRAYMENU2 MENU DISCARDABLE 
+#endif
+BEGIN
+    POPUP "-"
+    BEGIN
+        MENUITEM "Chart window",                ID_MEMCHART
+        POPUP "Icon style"
+        BEGIN
+            MENUITEM "Chip",                        IDC_IS_CHIP
+            MENUITEM "Four bars",                   IDC_IS_FOURBARS
+            MENUITEM "Minichart",                   IDC_IS_MINICHART
+            MENUITEM "Numerical",                   IDC_IS_NUMERICAL
+            MENUITEM "Digital",                     IDC_IS_NUMERICAL2
+        END
+        POPUP "Configuration"
+        BEGIN
+            MENUITEM "Freeing",                     ID_CFG_FREEING
+            MENUITEM "Monitoring",                  ID_CFG_MONITORING
+            MENUITEM "Appearance",                  ID_CFG_APPEARANCE
+            MENUITEM "Advanced",                    ID_CFG_ADVANCED
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Cancel memory freeing",       ID_CANCELFREE
+        MENUITEM "Automatic memory freeing",    ID_AUTOFREE
+        MENUITEM SEPARATOR
+        MENUITEM "Memory benchmark...",         ID_MEM_BENCH, GRAYED
+        POPUP "Other"
+        BEGIN
+            MENUITEM "Screen saver",                ID_SSAVER, GRAYED
+            MENUITEM "Clear clipboard",             ID_CLEARCLIPBOARD
+            MENUITEM SEPARATOR
+            MENUITEM "About...",                    ID_ABOUT
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Exit MemStat XP",             ID_EXIT
+    END
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(MEMSTAT_LANG_US)
+#if defined(APSTUDIO_INVOKED)
+IDR_APPEARANCE$(MEMSTAT_LANG_US) MENU DISCARDABLE 
+#else
+IDR_APPEARANCE MENU DISCARDABLE 
+#endif
+BEGIN
+    POPUP "-"
+    BEGIN
+        MENUITEM "Get colors from system",      ID_SYSCOLORS
+    END
+END
+#endif
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "IDD_FORMAT$(MEMSTAT_LANG_US)", DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 226
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 180
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_ICONFONT            BITMAP  DISCARDABLE     "iconfont.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MEM                 ICON    DISCARDABLE     "memstat.ico"
+IDI_TRAYLOW             ICON    DISCARDABLE     "traylow.ico"
+IDI_TRAYOK              ICON    DISCARDABLE     "trayok.ico"
+IDI_TRAY                ICON    DISCARDABLE     "trayinfo.ico"
+IDI_WORK                ICON    DISCARDABLE     "icon1.ico"
+IDI_BENCHMARK           ICON    DISCARDABLE     "ico00001.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//
+
+1                       24      MOVEABLE PURE   "MemStat.exe.manifest"
+#endif    // Neutral (Sys. Default) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

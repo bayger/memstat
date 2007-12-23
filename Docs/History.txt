@@ -1,0 +1,72 @@
+What's new (history log)
+
+Version 1.6.0.0 (2002-03-08)
++ fully customizable log format
++ direct log writing option (bypasses windows cache)
++ configurable chart window caption (colors and content!)
++ customizable tray icon tooltip
++ added option to limit freeing tries (eg. not more that 3 times)
++ added option to limit freeing time (eg. not longer than 60 seconds)
+* moved freeing thread priority to the advanced tab page
+* enabling/disabling automating memory freeing by radio buttons (it's clearer now)
+
+Version 1.5.1.3 (2002-02-27)
+* program translated to polish language
+* some interface changes
++ added abibility to translate to other languages
+
+Version 1.5.1.2 (2002-02-19)
+* fixed memory allocation under Windows 9x for systems
+  with more than 256 MB of physical memory
++ added appearance option 'Show hourglass...'
++ added ability to cancel freeing process (option in tray menu)
++ added creation of start menu items for MemStat XP
+
+Version 1.5.0.0 (2002-02-11)
++ memory benchmark (!)
++ two new icon styles: numerical and digital (you asked for it)
++ icon style can be now changed directly from trayicon pop-up menu
+* removed useless 'Additional info' and moved most important informations
+  to the tooltip of trayicon
+
+Version 1.4.5.1 (2002-02-08)
++ install/uninstall (NSIS)
++ active link to homepage in About
+
+Version 1.4.5.0 (2002-02-04)
+* improved memory freeing engine for Win2K/XP systems
++ saving windows positions
++ added 'Dismiss!' command to trayicon popup menu (closes this menu)
+* improved system registry operations (smaller code)
+* minor updates in interface (now it's clearer I hope)
+* fixed painting of chart window (no more cpu utilization if chart is hidden)
+
+Version 1.4.2.0 (2002-01-27)
++ chart window transparency (req. Win2k+)
+- clean drawing option removed from preferences (it is now always ON)
+* fixed program closing when shutting down Windows
+* fixed freeing memory at startup
+* some minor changes in interface
+
+Version 1.4.1.1 (2002-01-23)
++ added freeing progress bar (in Memory Freeing page)
+* changed (C) to 1999-2002 :)))
+
+Version 1.4.1.0 (2002-01-08)
++ added support for Windows XP themes
++ added system recognition to 'Additional info' config page
+* removed anti-NT nag screen
+* fixed 'Load on system startup' under NT/2k/XP
+* fixed TAB behaviour when working with config-dialog
+* fixed property pages sizing and placing (specially for XP visual themes)
+* fixed log name saving in registry (now it may have more than 4 characters, argh)
+* fixed color-buttons under NT/2k/XP
+
+Version 1.4.0.3 (2001)
++ added hotkey for manual memory freeing (!)
+* changed interface in 'Memory freeing' config page
+
+
+No written history of previous versions.
+
+(c) 1999-2002 by Patryk Bajer, bayger@box43.pl.
